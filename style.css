@@ -1,0 +1,129 @@
+/* Reset de margens, preenchimento e fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+  background-image: url(/images/17.jpg); /* Imagem de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+  background-size: cover; /* Cobrir toda a área do corpo */
+  background-attachment: fixed; /* Fixa a imagem ao rolar a página */
+}
+
+/* Estilo para flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px; /* Margem superior de 100 pixels */
+}
+
+/* Estilo para cartão (caixa) */
+.card {
+  background: linear-gradient(
+    135deg,
+    #8844ee,
+    #b07dfb
+  ); /* Gradiente de fundo */
+  padding: 30px; /* Preenchimento interno */
+  border-radius: 4%; /* Borda arredondada */
+  box-shadow: 3px 3px 1px 0px #00000060; /* Sombra */
+}
+
+/* Estilo para cabeçalho */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; /* Cor do texto branca */
+}
+
+/* Estilo para campos de entrada de texto */
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out; /* Transição suave */
+  border-radius: 0;
+  border-bottom: 2px solid #000; /* Borda inferior */
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #000; /* Borda inferior quando em foco */
+}
+
+/* Estilo para rótulo (label) flutuante */
+.label-float label {
+  color: black;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #fff; /* Mudança de estilo quando o campo está em foco */
+}
+
+/* Estilo para botão */
+button {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-color: #000;
+  color: #fff;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilo para centralizar */
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para linha horizontal */
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+/* Estilo para parágrafo */
+p {
+  color: #fff;
+  font-size: 14pt;
+  text-align: center;
+}
+
+/* Estilo para link */
+a {
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
